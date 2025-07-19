@@ -1,0 +1,157 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #003126;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  table {
+    table-layout: fixed;
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 13px 13px !important; /* ← !importantで強制適用 */
+    text-align: center;
+    font-size: 23px;
+    font-family: "MS Gothic", sans-serif;
+    vertical-align: middle;
+  }
+  
+  
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 20%;
+  }
+  
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 15%;
+  }
+  
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 35%;
+  }
+  
+  th:nth-child(4),
+  td:nth-child(4) {
+  width: 45%;            /* ← 走行位置列の幅指定 */
+  }
+  .label-cell {
+    background-color: #c6e8f9;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    font-size: 23px;  /* ← 文字サイズを調整 */
+    font-family: "MS Gothic", sans-serif;  /* ← フォントを指定 */
+    font-weight: bold; /* ← 文字を太字に */
+  }
+
+  .holiday-label-cell {
+  background-color: #fe5656cc;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  font-size: 23px;  /* ← 文字サイズを調整 */
+  font-family: "MS Gothic", sans-serif;  /* ← フォントを指定 */
+  font-weight: bold; /* ← 文字を太字に */
+  }
+
+  .form-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px !important;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold; /* ← 文字を太字に */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: "MS Gothic", sans-serif;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  .popup-description {
+  text-align: left;
+  display: block;
+  line-height: 1.4; /* ← これが行間。1.6〜2.0あたりが見やすい */
+  white-space: pre-wrap;
+  margin-bottom: 15px;
+  }
+
+  .popup-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+
+  .nav-button {
+  font-weight: bold;
+  }
+  
+  .popup-description {
+    margin: 10px 0;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto;        /* ← ここが重要 */
+    overflow-x: hidden;
+    text-overflow: unset;
+    max-height: 300px;
+    padding: 6px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

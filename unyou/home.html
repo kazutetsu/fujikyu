@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>富士急モビリティ湘南営業所 運用調査</title>
+  <link rel="stylesheet" href="kk.css">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+
+  <style>
+  body {
+    font-family: "MS Gothic", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*background-color: #686868;  ← 灰色 */
+    background-image: url(IMG_7951.JPG); /* ← 背景画像のパス */
+    background-size: cover;                 /* 画面全体に拡大 */
+    background-repeat: no-repeat;           /* 繰り返さない */
+    background-attachment: fixed;          /* ← スクロールしても背景を固定 */
+    background-position: center center;     /* 中央に配置 */
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* ← 黒 + 40% の透明度 */
+    z-index: -1;
+  }
+
+
+    header {
+      background-color: #3e6148;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 32px; /* ← 必要に応じて調整 */
+      font-weight: bold; /* ← 文字を太字に */
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      background-color: #859793;
+      padding: 30px 0;
+    }
+
+    .nav-button {
+      min-height: 200px; /* ← ボタンの縦の最小高さ */
+      flex: 0 0 300px;         /* ← 横幅（この固定値を広げる） */
+      padding: 8px;           /* ← ボタン内の余白（上下左右） */
+      background-color: #cfcfcf;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin: 0 5px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .nav-button:hover {
+      background-color: #666;
+    }
+
+    .nav-button img {
+      display: block;
+      margin: 0 auto 10px;
+      height: 180px;
+    }
+
+    .main-content {
+      padding: 50px 20px;
+    }
+
+    .link-button {
+      padding: 16px 32px;
+      font-size: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .link-button:hover {
+      background-color: #0056b3;
+    }
+
+    .news-section {
+      background-color: rgba(255, 255, 255, 0.8); /* 背景白・半透明で読みやすく */
+      margin: 35px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 1300px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .news-section h2 {
+      padding-left: 30px;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .news-list {
+      list-style-type: disc;
+      padding-left: 30px;
+      background-color: rgba(190, 190, 190, 0.8); /* 背景白・半透明で読みやすく */
+      border-radius: 5px;            /* ← 角丸 */
+      font-size: 30px;
+      line-height: 1.6;
+      max-height: 200px;     /* ← 高さ制限（必要に応じて調整） */
+      overflow-y: auto;      /* ← 垂直方向にスクロール可能に */
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    富士急モビリティ湘南営業所　運用調査　トップ
+  </header>
+
+  <!-- ナビゲーションボタン -->
+  <div class="nav-buttons">
+    <a href="kako.html" class="nav-button">
+      <img src="IMG_0833.JPG" alt="過去の運用情報">
+      過去の運用情報
+    </a>
+    <a href="index.html" class="nav-button">
+      <img src="IMG_1052.JPG" alt="運用情報">
+      運用情報
+    </a>
+    <a href="annai.html" class="nav-button">
+      <img src="IMG_fuji.JPG" alt="付加情報">
+      ご案内
+    </a>
+    <a href="" class="nav-button">
+      <img src="IMG_syako.JPG" alt="過去の運用情報">
+      車両図鑑(準備中)
+    </a>
+    <!-- 新着情報セクション -->
+
+
+  </div>
+
+    <div class="news-section">
+      <h2>新着情報</h2>
+      <ul class="news-list">
+        <li>2025/07/19 サイトを公開しました</li>
+      </ul>
+    </div>
+
+
+
+</body>
+</html>
