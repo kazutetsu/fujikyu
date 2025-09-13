@@ -1,0 +1,8 @@
+name = "my-sqlite-worker"
+main = "src/index.js"
+compatibility_date = "2025-09-13"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "Kazutetsu"
+database_id = "807346b7-02bc-468e-b58d-8740a4f11a0d"  # 作成時に表示されたID
