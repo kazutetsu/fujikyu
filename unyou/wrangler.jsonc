@@ -1,0 +1,11 @@
+{
+  "account_id": "a5a66004982fa1ed4e892629ef4ec5ab",
+  "compatibility_date": "2025-08-09",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "Kazutetsu",
+      "database_id": "807346b7-02bc-468e-b58d-8740a4f11a0d"
+    }
+  ]
+}
